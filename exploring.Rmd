@@ -1,0 +1,27 @@
+---
+title: "Untitled"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+library(tidyverse)
+```
+
+
+
+```{r}
+
+USA <- parties %>%
+  filter(country_name == "United States of America")
+
+USA <- USA %>%
+  select(v2paenname, year, country_name, 
+         v2panom_ord, v2padisa_ord, v2paind_ord, v2pasalie_0,
+         v2paopresp_ord)
+
+
+
+
+```
